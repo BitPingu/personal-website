@@ -15,34 +15,49 @@
     --buttonColor: black;
 }
 
+body.dark{
+    --mainColor:#15202B;
+    --secondaryColor:#192734;
+
+    --borderColor:#164D56;
+
+    --mainText:#fff;
+    --secondaryText:#eeeeee;
+
+    --themeDotBorder:#FFF;
+
+    --previewBg:rgb(25, 39, 52, 0.8);
+    --previewShadow:#111921;
+
+    --buttonColor: #17a2b8;
+}
+
 html, body {
     padding: 0;
     margin: 0;
 }
 
 body *{
-    transition: 0.3s;
+    transition: 0.2s linear;
 }
 
 h1, h2, h3, h4, h5, h6, strong{
     color: var(--mainText);
-    font-family: 'Russo One', sans-serif;
-    font-weight: 500;
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: 700;
 }
 
 p, li, span, label, input, textarea{
     color: var(--mainText);
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: 400;
 }
 
 a{
     text-decoration: none;
     color:#17a2b8;
-    font-family: 'Roboto Mono', monospace;
-}
-
-ul{
-    list-style: none;
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: 400;
 }
 
 h1 { font-size: 56px;}
@@ -51,6 +66,8 @@ h3 { font-size: 28px;}
 h4 { font-size: 24px;}
 h5 { font-size: 20px;}
 h6 { font-size: 16px;}
+
+p { font-size: 20px; }
 
 .s1{
     background-color: var(--mainColor);
@@ -69,17 +86,11 @@ h6 { font-size: 16px;}
     margin: 0 auto;
 }
 
-.greeting-wrapper{
-    display: grid;
-    text-align: center;
-    align-content: center;
-    min-height: 10em;
-}
-
 .intro-wrapper{
     background-color: var(--secondaryColor);
     border: 1px solid var(--borderColor);
     border-radius: 5px 5px 0 0;
+    margin: 50px;
 
     -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
@@ -147,12 +158,6 @@ h6 { font-size: 16px;}
     box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
 }
 
-.left-column{
-    grid-area: left-column;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
 #profile_pic {
     display: block;
     margin: 0 auto;
@@ -165,27 +170,52 @@ h6 { font-size: 16px;}
 
 #theme-options-wrapper{
     display: flex;
-    justify-content: center;
+    padding: 10px;
 }
 
-.theme-dot{
-    height: 30px;
-    width: 30px;
-    background-color: black;
-    border-radius: 50%;
+.checkbox{
+    opacity: 0;
+    position: absolute;
+}
 
-    margin: 5px;
-    border: 2px solid var(--themeDotBorder);
+.checkbox:checked + .label .ball{
+    transform: translateX(20px);
+}
+
+.label {
+    background-color: var(--previewShadow);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 50px;
+    position: relative;
+    height: 20px;
+    width: 40px;
+    margin-right: 5px;
+    border: 1px solid var(--borderColor);
+}
+
+.ball {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 1px;
+    width: 18px;
+    height: 18px;
 
     -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
     box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
-
-    cursor: pointer;
 }
 
-.theme-dot:hover{
-    border-width: 5px;
+.fa-moon{
+    color: #f1c40f;
+    font-size: 12px;
+}
+
+.fa-sun{
+    color: #f39c12;
+    font-size: 12px;
 }
 
 #light-mode{
@@ -196,8 +226,13 @@ h6 { font-size: 16px;}
     background-color: #192734;
 }
 
-#funky-mode{
-    background-color: #7E4C74;
+.left-column{
+    grid-area: left-column;
+    display: grid;
+    align-content: center;
+    
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 
 .right-column{
@@ -205,23 +240,25 @@ h6 { font-size: 16px;}
     display: grid;
     align-content: center;
 
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 
 #preview-shadow{
     background-color: var(--previewShadow);
-    width: 300px;
-    height: 180px;
+    width: 360px;
+    height: 250px;
     padding-left: 30px;
     padding-top: 30px;
 }
 
 #preview{
-    width: 300px;
+    width: 100%;
+    height: 100%;
     border: 1.5px solid #17a2b8;
     background-color: var(--previewBg);
-    padding: 15px;
+    padding-left: 30px;
+    padding-bottom: 30px;
     position: relative;
 }
 
@@ -256,7 +293,7 @@ h6 { font-size: 16px;}
 
 .about-wrapper{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     padding-bottom: 50px;
     padding-top: 50px;
     gap: 100px;
@@ -275,7 +312,13 @@ h6 { font-size: 16px;}
 }
 
 #social_img{
-    width: 100%;
+    display: block;
+    margin: 0 auto;
+
+    height: 300px;
+    width: 400px;
+    object-fit: cover;
+    border: 2px solid var(--borderColor);
 }
 
 .post-wrapper{
@@ -296,13 +339,14 @@ h6 { font-size: 16px;}
 .thumbnail{
     display: block;
     width: 100%;
-    height: 100px;
+    height: 200px;
     object-fit: cover;
 }
 
 .post-preview{
     background-color: #fff;
     padding: 15px;
+    height: 150px;
 }
 
 .post-title{
@@ -312,51 +356,14 @@ h6 { font-size: 16px;}
 
 .post-intro{
     color: #4b5156;
-    font-size: 14px;
-}
-
-#contact-form{
-    display: block;
-    max-width: 600px;
-    margin: 0 auto;
-    border: 1px solid var(--borderColor);
-    padding: 15px;
-    border-radius: 5px;
-    background-color: var(--mainColor);
-    margin-bottom: 50px; 
-}
-
-#contact-form label{
-    line-height: 2.7em;
-}
-
-.input-field{
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: var(--secondaryColor);
-    border-radius: 5px;
-    border: 1px solid var(--borderColor);
-    font-size: 14px;
-}
-
-#submit-btn{
-    margin-top: 10px;
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: #fff;
-    background-color: var(--buttonColor);
-    border: none;
+    font-size: 16px;
 }
 
 @media screen and (max-width: 1200px) {
     .main-container{
-        width: 95%;
+        width: 90%;
     }
-} 
 
-@media screen and (max-width: 1200px) {
     .intro-wrapper{
         grid-template-columns: 1fr;
         grid-template-areas: 
@@ -366,7 +373,28 @@ h6 { font-size: 16px;}
         ;
     }
 
+    .left-column{
+        padding-bottom: 0;
+    }
+
     .right-column{
         justify-content: center;
     }
+}
+
+@media screen and (max-width: 700px) {
+    #preview-shadow{
+        width: 250px;
+        height: 250px;
+        padding-left: 15px;
+        padding-top: 15px;
+    }
+
+    #preview{
+        padding-left: 15px;
+        padding-bottom: 15px;
+    }
+
+    h2 { font-size: 28px;}
+    p { font-size: 20px; }
 } 

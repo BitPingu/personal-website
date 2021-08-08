@@ -1,33 +1,14 @@
-console.log("Its working")
-
-let theme = localStorage.getItem("theme")
-
-if (theme == null) {
-    setTheme('light')
-} else {
-    setTheme(theme)
+if (localStorage.getItem("theme") == 'dark') {
+    document.getElementById("checkbox").checked = true
+    document.body.classList.toggle('dark')
 }
 
-let themeDots = document.getElementsByClassName("theme-dot")
-
-for (var i=0; themeDots.length > i; i++) {
-    themeDots[i].addEventListener('click', function() {
-        let mode = this.dataset.mode
-        console.log("Option clicked: ", mode)
-        setTheme(mode)
-    })
-}
-
-function setTheme(mode) {
-    if (mode=='light') {
-        document.getElementById('theme-style').href = 'default.css'
+checkbox.addEventListener('change', () => {
+    document.body.classList.toggle('dark')
+    if (localStorage.getItem("theme") != 'dark') {
+        localStorage.setItem('theme', 'dark')
+    } else {
+        localStorage.setItem('theme', 'light')
     }
-    if (mode=='dark') {
-        document.getElementById('theme-style').href = 'dark.css'
-    }
-    if (mode=='funky') {
-        document.getElementById('theme-style').href = 'funky.css'
-    }
-
-    localStorage.setItem('theme', mode)
-}
+    console.log(localStorage.getItem('theme'))
+});
