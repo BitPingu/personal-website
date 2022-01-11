@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+    text-decoration: none;
+}
+
+body{
+    background: url(whiteoak.jpg) center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.card-container{
+    margin-top: 220px;
+    margin-bottom: 300px;
+}
+
+.card{
+    background: #2c3a47;
+    width: 400px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75); 
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+.profile-card-header{
+    text-align: center;
+    padding: 20px;
+    padding-top: 70px;
+}
+
+.profile-pic{
+    display: inline-block;
+    padding: 8px;
+    background: linear-gradient(130deg, #74b9ff, #e66767);
+    margin: auto;
+    border-radius: 50%;
+    background-size: 200% 200%;
+    animation: animated-gradient 2s linear infinite;
+    position: absolute;
+    transform: translate(-50%, -110%);
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+}
+
+@keyframes animated-gradient{
+    25%{
+        background-position: left bottom;
+    }
+    50%{
+        background-position: right bottom;
+    }
+    75%{
+        background-position: right top;
+    }
+    100%{
+        background-position: left top;
+    }
+}
+
+.profile-pic img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.title{
+    color: #f2f2f2;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.desc{
+    color: #e66767;
+    font-size: 18px;
+}
+
+.desc2{
+    color: #f2f2f2;
+    font-size: 18px;
+}
+
+.profile-card-body{
+    background: #f4f4f4;
+    padding: 40px;
+    color: #2c3a47;
+    font-size: 18px;
+}
+
+.profile-card-footer{
+    text-align: center;
+    padding: 20px;
+}
+
+.sm a{
+    color: #f2f2f2;
+    width: 42px;
+    font-size: 22px;
+    transition: .2s linear;
+}
+
+.sm a:hover{
+    color: #e66767;
+}
+
+.card-header{
+    text-align: center;
+    padding: 20px;
+}
+
+.interests-card-body{
+    padding: 40px;
+    padding-top: 0;
+    padding-left: 35%;
+    color: #e66767;
+    font-size: 18px;
+    background: linear-gradient(130deg, #74b9ff, #e66767);
+	background-size: 200% 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animated-gradient 2s linear infinite;
+    list-style-type: circle;
+    display: inline-block;
+}
+
+.skills-card-body{
+    padding: 40px;
+    padding-top: 0;
+}
+
+.skill-details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill-bar{
+    margin-top: 10px;
+    margin-bottom: 12px;
+    height: 10px;
+    background-color: #374552;
+    border-radius: 3px;
+}
+
+.skill-per{
+    height: 10px;
+    background-color: #e66767;
+    border-radius: 3px;
+    position: relative;
+}
+
+.projects-card-title{
+    text-align: center;
+    padding: 20px;
+    background: #2c3a47;
+    width: 400px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75); 
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.slide-container{
+    /* display: flex; */
+}
+
+.projects-card-header{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.project{
+    padding: 40px;
+    background: url(git.png) center;
+    background-size: cover;
+    object-fit: cover;
+    width: 400px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75); 
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+
