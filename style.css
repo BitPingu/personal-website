@@ -69,21 +69,44 @@ body{
     object-fit: cover;
 }
 
-.title{
+h1{
     color: #f2f2f2;
     font-size: 28px;
-    font-weight: 600;
     margin-bottom: 10px;
 }
 
-.desc{
+h3 {
     color: #e66767;
     font-size: 18px;
+    font-weight: normal;
+    overflow: hidden;
 }
 
-.desc2{
+h3:before,
+h3:after {
+    background-color: #e66767;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+
+h3:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+
+h3:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+
+h4 {
     color: #f2f2f2;
     font-size: 18px;
+    font-weight: normal;
 }
 
 .profile-card-body{
@@ -109,18 +132,22 @@ body{
     color: #e66767;
 }
 
+.sm i{
+    color: #e66767;
+    width: 42px;
+    font-size: 22px;
+}
+
 .card-header{
     text-align: center;
     padding: 20px;
 }
 
-.interests-card-body{
-    padding: 40px;
-    padding-top: 0;
-    padding-left: 35%;
+.interests-card-tech{
+    padding-left: 25%;
     color: #e66767;
     font-size: 18px;
-    background: linear-gradient(130deg, #74b9ff, #e66767);
+    background: linear-gradient(130deg, #74b9ff, #32CD32);
 	background-size: 200% 200%;
     background-clip: text;
     -webkit-background-clip: text;
@@ -128,6 +155,25 @@ body{
     animation: animated-gradient 2s linear infinite;
     list-style-type: circle;
     display: inline-block;
+}
+
+.interests-card-nontech{
+    padding-left: 25%;
+    color: #e66767;
+    font-size: 18px;
+    background: linear-gradient(130deg, #FF8C00, #DC143C);
+	background-size: 200% 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animated-gradient 2s linear infinite;
+    list-style-type: circle;
+    display: inline-block;
+}
+
+.interests-card-footer{
+    text-align: center;
+    padding: 20px;
 }
 
 .skills-card-body{
@@ -177,9 +223,53 @@ body{
     margin-bottom: 20px;
 }
 
+.projects-card-footer{
+    text-align: center;
+    margin-top: 30px;
+}
+
 .project{
     padding: 40px;
     background: url(git.png) center;
+    background-size: cover;
+    object-fit: cover;
+    width: 400px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75); 
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.project-isekai{
+    padding: 40px;
+    background: url(isekai.png) center;
+    background-size: cover;
+    object-fit: cover;
+    width: 400px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75); 
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.project-genshin{
+    padding: 40px;
+    background: url(genshin.png) center;
+    background-size: cover;
+    object-fit: cover;
+    width: 400px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75); 
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.project-littlemon{
+    padding: 40px;
+    background: url(littlemon.png) center;
     background-size: cover;
     object-fit: cover;
     width: 400px;
