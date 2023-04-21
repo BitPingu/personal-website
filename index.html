@@ -4,142 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gavin Eugenio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/26d4a64054.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
-    <div class="card-container">
-        <div class="card">
-            <div class="profile-card-header">
-                <div class="profile-pic">
-                    <img src="me.jpg" alt="">
-                </div>
-                <h1>Gavin Eugenio</h1>
-                <h3>Computer Science Student</h3>
+    <div class="navbar">
+        <a style="margin: 10px; margin-right: auto;" href="gavin-eugenio.netlify.app">Gavin Eugenio</a>
+        <ul id="desktop_links">
+            <li><a href="mailto:gavin.eugenio@gmail.com" target="_blank">Email</a></li>
+            <li><a href="https://github.com/BitPingu" target="_blank">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/gavin-eugenio/" target="_blank">LinkedIn</a></li>
+        </ul>
+        <div id="hamburger">
+            <a id="socials_button" href="#">Socials <i class="fa fa-caret-down"></i></a>
+            <div id="mobile_links">
+                <a href="mailto:gavin.eugenio@gmail.com" target="_blank">Email</a>
+                <a href="https://github.com/BitPingu" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/gavin-eugenio/" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+        </label>
+    </div>
+    <div class="page">
+        <div class="section" style="flex-wrap: wrap-reverse">
+            <div id="profile_body">
+                <h1>Hi, I'm Gavin.<h1> 
+                <h3>I'm an aspiring software developer and a second year computer science student at the University of Guelph.</h3><br>
+                <p>
+                    I have had experience working with different programming languages such as Java, C, and Python, as well as C# on my side projects.
+                    I also study philosophy on the side.
+                    <br><br>
+                    When I unwind, I play video games, watch anime, <a href="pengpic.png" target="_blank"> draw (pretty badly) </a> and play the drums.
+                </p>   
             </div>   
-            <div class="profile-card-body">
-                Hi, I'm Gavin. <br><br> I'm an aspiring software developer and Computer Science undergraduate at the University of Guelph.
-            </div>       
-            <div class="profile-card-footer">
-                <div class="sm">
-                    <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=gavin.eugenio@gmail.com" class="fa fa-envelope"></a>
-                    <a target="_blank" href="https://www.linkedin.com/in/gavin-eugenio" class="fab fa-linkedin"></a>
-                    <a target="_blank" href="https://github.com/BitPingu" class="fab fa-github"></a>
-                </div>
-            </div>                                                   
+            <img id="profile_pic" src="me.jpg" alt="Photo of Gavin">                                           
         </div>
-        <div class="card">
-            <div class="card-header">
-                <h1>My Interests</h1>
-                <h3>Tech Related</h3>
-            </div>
-            <div class="interests-card-tech">
-                <ul>
-                    <li>Mixed Reality <i class="fas fa-vr-cardboard"></i></li>
-                    <li>Artifical Intelligence <i class="fas fa-robot"></i></li>
-                    <li>Game Development <i class="fa fa-gamepad"></i></li>
-                    <li>Cybersecurity <i class="fas fa-lock"></i></li>
-                </ul>
-            </div>  
-            <div class="card-header">
-                <h3>Non-Tech Related</h3>
-            </div>   
-            <div class="interests-card-nontech">
-                <ul>
-                    <li>Anime & Manga <i class="fas fa-book"></i></li>
-                    <li>Drumming <i class="fa fa-drum"></i></li>
-                    <li>Drawing <i class="fa fa-pen"></i></li>
-                    <li>Origami <i class="fas fa-paper-plane"></i></li>
-                    <li>Fantasy Stories <i class="fa fa-dragon"></i></li>
-                    <li>Philosophy <i class="fa fa-brain"></i></li>
-                </ul>
-            </div>   
-            <div class="interests-card-footer"></div>                                 
-        </div>
-        <div class="card">
-            <div class="card-header">
-                <h1>My Skills</h1>
-            </div>    
-            <div class="skills-card-body">
-                <div class="skill">
-                    <div class="skill-details">
-                        <h4>Java</h4>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-per" per="40%" style="max-width:40%"></div>
-                    </div>
+        <div class="section" style="flex-direction: column;">
+            <h2>My Projects</h2>
+            <div id="projects_body">
+                <div class="project" style="background: url(isekai.png) center;">
+                    <h2>Isekai</h2>
+                    <h3>A top down 2D survival game</h3><br>
+                    <h4>An open world game developed using Unity2D. Utilizes procedural generation with tilemaps for world building. 
+                        Inspired by my own game Genshin Chronicles.
+                        <br><br>Currently a work-in-progress.</h4>
                 </div>
-                <div class="skill">
-                    <div class="skill-details">
-                        <h4>C</h4>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-per" per="40%" style="max-width:40%"></div>
-                    </div>
+                <div class="project" style="background: url(genshin.png) center;">
+                    <h2>Genshin Chronicles</h2>
+                    <h3>A text based open world rpg game</h3><br>
+                    <h4>A command line game developed using Java.
+                        <br><br>Venture forth into the world of Genshin, command teammates into battle, defeat monsters, loot dungeons, and save the world. 
+                        Utilizes object-oriented programming for characters.
+                        <br><br>Inspired by various rpg games such as Dicey Dungeons, Genshin Impact, and Xenoblade Chronicles.</h4>
                 </div>
-                <div class="skill">
-                    <div class="skill-details">
-                        <h4>Python</h4>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-per" per="40%" style="max-width:20%"></div>
-                    </div>
-                </div>
-            </div>                                        
-        </div>
-        <div class="projects-card-title">
-            <h1>My Projects</h1>
-        </div>  
-        <div class="slide-container">
-            <div class="project-isekai">
-                <div class="projects-card-header">
-                    <h1>Isekai</h1>
-                    <h3>A top down 2D survival game</h3>
-                </div>
-                <h4>An open world game developed using Unity2D. Utilizes procedural generation with tilemaps for world building. 
-                    Inspired by my own game Genshin Chronicles.
-                    <br><br>Currently a work-in-progress.</h4>
-                <div class="projects-card-footer">
-                    <div class="sm">
-                        <i class="fas fa-cube"></i>
-                        <i class="fab fa-cuttlefish">#</i>
-                        <a target="_blank" href="https://github.com/BitPingu/isekai" class="fab fa-github"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="project-genshin">
-                <div class="projects-card-header">
-                    <h1>Genshin Chronicles</h1>
-                    <h3>A text based open world rpg game</h3>
-                </div>
-                <h4>A command line game developed using Java.
-                    <br><br>Venture forth into the world of Genshin, command teammates into battle, defeat monsters, loot dungeons, and save the world. 
-                    Utilizes object-oriented programming for characters.
-                    <br><br>Inspired by various rpg games such as Dicey Dungeons, Genshin Impact, and Xenoblade Chronicles.</h4>
-                <div class="projects-card-footer">
-                    <div class="sm">
-                        <i class="fab fa-java"></i>
-                        <a target="_blank" href="https://github.com/BitPingu/genshin-chronicles" class="fab fa-github"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="project-littlemon">
-                <div class="projects-card-header">
-                    <h1>Littlemon Rouge</h1>
-                    <h3>A text based adventure rpg game</h3>
-                </div>
-                <h4>A command line game developed using Java.
-                    <br><br>Play the role as a Littlemon Handler, catch Littlemon, train Littlemon, and battle other Littlemon handlers to become the very best. 
-                    Utilizes object-oriented programming for Littlemon.
-                    <br><br>Inspired by the Pokémon series.</h4>
-                <div class="projects-card-footer">
-                    <div class="sm">
-                        <i class="fab fa-java"></i>
-                        <a target="_blank" href="https://github.com/BitPingu/littlemon-rouge" class="fab fa-github"></a>
-                    </div>
+                <div class="project" style="background: url(littlemon.png) center;">
+                    <h2>Littlemon Rouge</h2>
+                    <h3>A text based adventure rpg game</h3><br>
+                    <h4>A command line game developed using Java.
+                        <br><br>Play the role as a Littlemon Handler, catch Littlemon, train Littlemon, and battle other Littlemon handlers to become the very best. 
+                        Utilizes object-oriented programming for Littlemon.
+                        <br><br>Inspired by the Pokémon series.</h4>
                 </div>
             </div>
         </div>
+    </div>
 </body>        
 </html>
-
