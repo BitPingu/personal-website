@@ -78,13 +78,18 @@ p {
     z-index: 1;
 }
 
-@media screen and (min-width: 701px) {
+#home_button {
+    margin: 10px; 
+    margin-right: auto; 
+}
+
+@media screen and (min-width: 801px) {
     #hamburger {
         display: none;
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
     #desktop_links {
         display: none;
     }
@@ -221,4 +226,24 @@ input:checked + .slider:before {
     padding: 50px;
     background: url(git.png) center;
     background-size: cover;
+}
+
+#error_404 {
+    /* border: 1px solid black; */
+    margin-top: 300px;
+    padding: 10px;
+    text-align: center;
+}
+
+#error_404 a {
+    /* border: 1px solid black; */
+    color: var(--font-color);
+    font-size: 24px;
+    padding: 10px 16px;
+    text-decoration: none;
+}
+
+#error_404 a:hover {
+    color: #32CD32;
+    text-decoration: underline;
 }
