@@ -37,7 +37,7 @@ p, a {
 }
 
 a:hover {
-    color: gray;
+    color: #CD9C4E;
 }
 
 @media screen and (max-width: 600px) {
@@ -54,7 +54,11 @@ a:hover {
 
 @media screen and (min-width: 901px) {
     #home_button {
+        font-size: 44px;
         margin-left: 60px; 
+    }
+    .social_button {
+        font-size: 28px;
     }
     #desktop_links {
         margin-right: 60px;
@@ -65,11 +69,15 @@ a:hover {
 }
 
 @media screen and (max-width: 900px) {
+    #home_button {
+        font-size: 34px;
+        margin-left: 20px; 
+    }
+    .social_button {
+        font-size: 24px;
+    }
     #desktop_links {
         display: none;
-    }
-    #home_button {
-        margin-left: 20px; 
     }
     #socials_dropdown {
         margin-right: 20px;
@@ -108,7 +116,6 @@ a:hover {
     background-color: transparent;
     cursor: pointer;
     font-family: Garamond, serif;
-    font-size: 44px;
     font-weight: bold;
     margin-right: auto; 
     padding: 10px 16px;
@@ -120,16 +127,16 @@ a:hover {
     cursor: pointer;
     display: inline-block;
     font-family: Garamond, serif;
-    font-size: 28px;
     padding: 10px 16px;
+    text-decoration: underline;
 }
 
 .social_button:hover {
-    color: gray;
+    color: #CD9C4E;
 }
 
 .navbar.scrolled .social_button:hover {
-    color: gray;
+    color: #CD9C4E;
 }
 
 #mobile_links {
@@ -146,7 +153,7 @@ a:hover {
 }
 
 #mobile_links .social_button:hover {
-    color: gray;
+    color: #CD9C4E;
 }
 
 .section {
@@ -183,9 +190,9 @@ a:hover {
     margin: 70px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1100px) {
     #projects_body {
-        grid-template-columns: 400px;
+        grid-template-columns: auto;
     }
 }
 
@@ -202,7 +209,7 @@ a:hover {
 }
 
 .project a:hover {
-    color: gray;
+    color: #CD9C4E;
 }
 
 #experience_body {
@@ -218,14 +225,35 @@ a:hover {
     }
 }
 
-.experience{
+.experience {
     /* border: 1px solid black; */
     padding: 30px;
 }
 
-.experience ul, ol{
+.experience ul, ol {
     font-size: 20px;
     padding-left: 0;
+}
+
+#bank_pic {
+    width: auto;
+    max-height: 450px;
+}
+
+#nbc_body {
+    width: 750px;
+}
+
+@media screen and (max-width: 800px) {
+    #nbc_body {
+        margin-left: 50px;
+        margin-right: 50px;
+        width: auto;
+    }
+    #bank_pic {
+        width: auto;
+        max-height: 300px;
+    }
 }
 
 #error_404 {
