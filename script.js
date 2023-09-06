@@ -9,11 +9,14 @@ $(function() {
         $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height() - 120);
     });
 
-    // Home button
+    // Home buttons
     $('#home_button').on('click', function() {
         window.open('/', '_self')
     });
-    $('#404_button').on('click', function() {
+    $('#return_button').on('click', function() {
+        window.open('/', '_self')
+    })
+    $('#return_button2').on('click', function() {
         window.open('/', '_self')
     })
 
