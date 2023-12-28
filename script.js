@@ -40,19 +40,6 @@ $(function() {
         window.open('https://www.linkedin.com/in/gavin-eugenio', '_blank')
     });
 
-    // Mobile navbar
-    var links = document.getElementById('mobile_links');
-    $('#socials_dropdown').on('click', function() {
-        if (links.style.display === 'block') {
-            links.style.display = 'none';
-        } else {
-            links.style.display = 'block'
-        }
-    });
-    $(document).scroll(function() {
-        links.style.display = 'none';
-    });
-
     // Hi
     $('#profile_pic').on('click', function(e) {
         alert('Hi 👋');
