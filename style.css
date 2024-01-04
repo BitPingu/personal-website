@@ -152,7 +152,7 @@ a:hover {
 }
 
 #socials_dropdown:hover #mobile_links {
-    display: block;
+    /* display: block; */
 }
 
 .section {

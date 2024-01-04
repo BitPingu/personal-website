@@ -21,6 +21,13 @@ $(function() {
     })
 
     // Social buttons
+    $('#socials_dropdown').hover(function() {
+        $('#mobile_links').show()
+    },
+    function () {
+        $('#mobile_links').hide()
+    }
+    );
     $('#email').on('click', function() {
         window.open('mailto:gavin.eugenio@gmail.com', '_blank')
     });
@@ -39,6 +46,20 @@ $(function() {
     $('#linkedin_m').on('click', function() {
         window.open('https://www.linkedin.com/in/gavin-eugenio', '_blank')
     });
+
+    // NBC Buttons
+    $('#nbc_button').on('click', function() {
+        window.open('/nbc.html', '_self')
+    })
+    $('#nbc_button2').on('click', function() {
+        window.open('/nbc.html', '_self')
+    })
+    $('#nbc2_button').on('click', function() {
+        window.open('/nbc2.html', '_self')
+    })
+    $('#nbc2_button2').on('click', function() {
+        window.open('/nbc2.html', '_self')
+    })
 
     // Hi
     $('#profile_pic').on('click', function(e) {
