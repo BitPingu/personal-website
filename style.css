@@ -1,9 +1,10 @@
 body {
     background-color: white;
-    color: black;
+    color: #333333;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     text-align: left;
+    line-height: 1.4
 }
 
 h1 {
@@ -19,6 +20,7 @@ h2 {
 h3 {
     font-size: 26px;
     margin: 0;
+    margin-bottom: 10px;
 }
 
 h4 {
@@ -29,10 +31,12 @@ h4 {
 p {
     font-size: 20px;
     margin: 0;
+    margin-bottom: 10px;
 }
 
 ul {
     font-size: 20px;
+    margin: 0;
 }
 
 a {
@@ -59,44 +63,47 @@ a:active {
 
 .section {
     /* border: 1px solid red; */
+    /* position: absolute; */
+    /* top: 0; left: 0; right: 0; bottom: 0; */
+    margin: auto;
+    width: 700px;
+    /* height: 900px; */
+    margin-top: 100px;
 }
 
-#profile_body {
-    /* border: 1px solid orange; */
-    width: 700px;
-    margin: auto;
-    margin-top: 200px;
-    margin-bottom: 50px;
+hr.solid {
+    border-top: 1px solid #bbb;
 }
 
 #profile_pic {
+    /* border: 1px solid orange; */
     display: block;
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     max-width: 150px; 
     height: auto;
     pointer-events: none;
     user-select: none;
 }
 
+#profile_body {
+    /* border: 1px solid orange; */
+    margin: 30px;
+}
+
+#socials_body {
+    /* border: 1px solid orange; */
+    margin: 30px;
+}
+
 #projects_body {
     /* border: 1px solid orange; */
-    width: 700px;
-    margin: auto;
-    margin-top: 50px;
-    margin-bottom: 200px;
+    margin: 30px;
 }
 
 @media screen and (max-width: 800px) {
-    #profile_body {
+    .section {
         width: auto;
-        margin-left: 30px;
-        margin-right: 30px;
-    }
-    #projects_body {
-        width: auto;
-        margin-left: 30px;
-        margin-right: 30px;
     }
 }
 
