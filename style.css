@@ -1,7 +1,7 @@
 body {
     background-color: white;
     color: #333333;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Helvetica', 'Courier New', sans-serif;
     margin: 0;
     text-align: left;
     line-height: 1.4
@@ -9,17 +9,14 @@ body {
 
 h1 {
     font-size: 64px;
-    margin: 0;
 }
 
 h2 {
     font-size: 40px;
-    margin: 0;
 }
 
 h3 {
     font-size: 26px;
-    margin: 0;
     margin-bottom: 10px;
 }
 
@@ -63,12 +60,10 @@ a:active {
 
 .section {
     /* border: 1px solid red; */
-    /* position: absolute; */
-    /* top: 0; left: 0; right: 0; bottom: 0; */
     margin: auto;
     width: 700px;
-    /* height: 900px; */
     margin-top: 100px;
+    margin-bottom: 150px;
 }
 
 hr.solid {
@@ -76,10 +71,11 @@ hr.solid {
 }
 
 #profile_pic {
-    /* border: 1px solid orange; */
+    border: 4px solid #bbb;
+    border-radius: 50%;
     display: block;
     margin: auto;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
     max-width: 150px; 
     height: auto;
     pointer-events: none;
@@ -88,17 +84,17 @@ hr.solid {
 
 #profile_body {
     /* border: 1px solid orange; */
-    margin: 30px;
+    margin: 40px;
 }
 
 #socials_body {
     /* border: 1px solid orange; */
-    margin: 30px;
+    margin: 40px;
 }
 
 #projects_body {
     /* border: 1px solid orange; */
-    margin: 30px;
+    margin: 40px;
 }
 
 @media screen and (max-width: 800px) {
@@ -107,17 +103,18 @@ hr.solid {
     }
 }
 
+#peng_pic {
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    margin-bottom: 25px;
+    max-width: 50px; 
+    height: auto;
+    pointer-events: none;
+    user-select: none;
+}
+
 #fourohfour_body {
     margin-top: 300px;
     text-align: center;
-}
-
-#nbc_body {
-    width: 750px;
-    margin: auto;
-}
-
-#bank_pic {
-    max-width: 600px; 
-    height: auto;
 }
