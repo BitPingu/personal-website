@@ -17,18 +17,14 @@ h2 {
 
 h3 {
     font-size: 26px;
-    margin-bottom: 10px;
 }
 
 h4 {
     font-size: 20px;
-    margin: 0;
 }
 
 p {
     font-size: 20px;
-    margin: 0;
-    margin-bottom: 10px;
 }
 
 ul {
@@ -62,7 +58,7 @@ a:active {
     /* border: 1px solid red; */
     margin: auto;
     width: 700px;
-    margin-top: 100px;
+    margin-top: 175px;
     margin-bottom: 150px;
 }
 
@@ -118,3 +114,4 @@ hr.solid {
     margin-top: 300px;
     text-align: center;
 }
+
