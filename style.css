@@ -1,91 +1,46 @@
 body {
-    background-color: white;
-    color: #333333;
-    font-family: 'Helvetica', 'Courier New', sans-serif;
-    margin: 0;
-    text-align: left;
-    line-height: 1.4;
-}
-
-h1 {
-    font-size: 60px;
-}
-
-h2 {
-    font-size: 36px;
-}
-
-h3 {
-    font-size: 24px;
-}
-
-h4 {
-    font-size: 18px;
-}
-
-p {
-    font-size: 18px;
-}
-
-ul {
-    font-size: 18px;
-    margin: 0;
-}
-
-a {
-    font-size: 18px;
-    color: #4682B4;
-}
-
-a:link {
-    text-decoration: none;
-}
-
-a:visited {
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-    color: #4169E1;
-}
-
-a:active {
-    text-decoration: underline;
-}
-
-.section {
     /* border: 1px solid red; */
+    color: #333333;
+    font-weight: 300;
     margin: auto;
-    width: 700px;
-    margin-top: 175px;
-    margin-bottom: 150px;
+    width: 520px;
+    line-height: 1.6;
+    margin-top: 160px;
 }
 
-.body {
-    /* border: 1px solid orange; */
-    margin: 40px;
-}
-
-@media screen and (max-width: 800px) {
-    .section {
+@media screen and (max-width: 520px) {
+    body {
         width: auto;
+        margin-left: 50px;
+        margin-right: 50px;
     }
 }
 
-#peng_pic {
-    border-radius: 50%;
-    display: block;
-    margin: auto;
-    margin-bottom: 25px;
-    max-width: 50px; 
-    height: auto;
-    pointer-events: none;
-    user-select: none;
+h1 {
+    font-size: 19px;
+    font-weight: normal;
 }
 
-#fourohfour_body {
-    margin-top: 300px;
-    text-align: center;
+a {
+    font-weight: 400;
+    color: #1E90FF;
+    text-underline-offset: 4px;
+}
+
+a:hover {
+    color: #4682B4;
+}
+
+.fa {
+    text-decoration: none;
+    margin: 2px;
+}
+
+#peng_pic {
+    display: block;
+    margin-left: 20px;
+    max-width: 45px; 
+    pointer-events: none;
+    user-select: none;
 }
 
