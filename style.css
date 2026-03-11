@@ -2,17 +2,17 @@ body {
     /* border: 1px solid red; */
     color: #333333;
     font-weight: 300;
-    margin: auto;
-    width: 520px;
     line-height: 1.6;
-    margin-top: 160px;
+    margin: auto;
+    margin-top: 12vh;
+    width: 520px;
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 600px) {
     body {
-        width: auto;
         margin-left: 50px;
         margin-right: 50px;
+        width: auto;
     }
 }
 
@@ -22,9 +22,9 @@ h1 {
 }
 
 a {
-    font-weight: 400;
     color: #1E90FF;
     text-underline-offset: 4px;
+    font-weight: 400;
 }
 
 a:hover {
@@ -32,8 +32,8 @@ a:hover {
 }
 
 .fa {
-    text-decoration: none;
     margin: 2px;
+    text-decoration: none;
 }
 
 #peng_pic {
