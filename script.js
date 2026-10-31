@@ -1,6 +1,6 @@
-const USERNAME = "BitPingu";
-const API_KEY = "9c0f6110c17ab49492000b66a4111be3";
-const url = `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${USERNAME}&api_key=${API_KEY}&limit=1&format=json`;
+const username = "BitPingu";
+
+const url = `/.netlify/functions/get-tracks?user=${username}`;
 
 fetch(url)
     .then(response => response.json())
