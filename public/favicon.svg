@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <rect width="48" height="48" rx="10" fill="#F8F7F2" />
+  <text
+    x="24"
+    y="33"
+    text-anchor="middle"
+    font-family="Georgia, serif"
+    font-size="30"
+    letter-spacing="-2"
+    fill="#A8795E"
+  >ge.</text>
+</svg>

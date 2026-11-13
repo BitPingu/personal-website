@@ -1,21 +1,33 @@
 {
   "name": "personal-website",
-  "version": "1.0.0",
-  "description": "",
-  "main": "script.js",
-  "scripts": {
-    "dev": "netlify dev"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/BitPingu/personal-website.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "private": true,
+  "version": "0.0.0",
   "type": "module",
-  "bugs": {
-    "url": "https://github.com/BitPingu/personal-website/issues"
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "preview": "vite preview"
   },
-  "homepage": "https://github.com/BitPingu/personal-website#readme"
+  "dependencies": {
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^24.19.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "eslint": "^10.14.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.7",
+    "globals": "^17.13.0",
+    "prettier": "^3.10.1",
+    "typescript": "~6.0.3",
+    "typescript-eslint": "^8.72.1",
+    "vite": "^8.3.6"
+  }
 }
