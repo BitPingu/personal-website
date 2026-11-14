@@ -101,13 +101,13 @@ a:focus-visible {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 140px 0 56px;
+  padding: 160px 0 56px;
   text-align: center;
 }
 
 .hero-intro {
   max-width: 700px;
-  margin-bottom: 24px;
+  margin-bottom: 34px;
 }
 
 .hero-intro h1 {
@@ -151,7 +151,7 @@ a:focus-visible {
 }
 
 .hero-welcome {
-  margin: 16px 0 0;
+  margin: 12px 0 0;
   color: var(--color-muted);
   font-size: 1.1rem;
   font-style: italic;
@@ -162,18 +162,19 @@ a:focus-visible {
 .hero-thanks {
   margin: 10px 0 0;
   color: var(--color-muted);
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   font-style: italic;
   line-height: 1.6;
 }
 
 .hero-description {
-  max-width: 500px;
-  margin: 0 auto 32px;
+  max-width: 460px;
+  margin: 0 auto 52px;
   color: var(--color-description);
   font-size: 0.95rem;
-  font-weight: 400;
-  line-height: 2.2;
+  font-weight: 450;
+  line-height: 3;
+  letter-spacing: 0.01em;
   text-align: center;
 }
 
@@ -201,9 +202,9 @@ a:focus-visible {
 
 .hero-listening {
   min-height: 1.2rem;
-  margin: 0 0 48px;
+  margin: 0 0 76px;
   color: var(--color-muted);
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   font-weight: 400;
   font-style: italic;
 }
@@ -214,35 +215,35 @@ a:focus-visible {
   gap: 6px;
 }
 
-.hero-links {
+.hero-link {
   text-align: center;
 }
 
-.hero-links a {
+.hero-link a {
   display: inline-block;
   color: var(--color-accent);
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   font-weight: 600;
   transition: color 0.2s ease;
 }
 
-.hero-links a:hover {
+.hero-link a:hover {
   color: var(--color-text);
 }
 
-.work-arrow {
+.hero-arrow {
   display: inline-block;
   transition: transform 0.2s ease;
 }
 
-.hero-links a:hover .work-arrow {
+.hero-link a:hover .hero-arrow {
   transform: translateY(3px);
 }
 
 /* Projects */
 
 .projects {
-  padding: 32px 0;
+  padding: 24px 0 28px;
 }
 
 .project-list {
@@ -292,7 +293,7 @@ a:focus-visible {
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
 }
 
 .project-technologies {
@@ -309,12 +310,13 @@ a:focus-visible {
   background-color: transparent;
   color: var(--color-description);
   font-family: var(--font-mono);
-  font-size: 0.6rem;
+  font-size: 0.65rem;
 }
 
 /* Contact */
 
 .contact {
+  margin-bottom: 560px;
   text-align: center;
 }
 
@@ -337,7 +339,7 @@ a:focus-visible {
   align-items: center;
   gap: 6px;
   color: var(--color-accent);
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   font-weight: 400;
   transition: color 0.2s ease;
 }
@@ -351,7 +353,7 @@ a:focus-visible {
 .back-to-top {
   display: block;
   width: fit-content;
-  margin: 160px auto 0;
+  margin: 0 auto;
   color: var(--color-accent);
   font-size: 0.85rem;
   transition:
@@ -371,10 +373,10 @@ a:focus-visible {
   width: 100%;
   align-items: center;
   justify-content: center;
-  padding: 12px 0 20px;
+  padding: 24px 0 36px;
   color: var(--color-muted);
   font-family: var(--font-mono);
-  font-size: 0.6rem;
+  font-size: 0.65rem;
   letter-spacing: 0.02em;
   text-align: center;
   opacity: 0.5;
@@ -389,11 +391,11 @@ a:focus-visible {
   }
 
   .hero-content {
-    padding: 90px 0 44px;
+    padding: 130px 0 44px;
   }
 
   .hero-intro {
-    margin-bottom: 26px;
+    margin-bottom: 30px;
   }
 
   .hero-intro h1 {
@@ -401,21 +403,17 @@ a:focus-visible {
   }
 
   .hero-description {
-    margin-bottom: 24px;
     font-size: 0.9rem;
-    line-height: 1.9;
-  }
-
-  .projects {
-    padding: 36px 0 48px;
-  }
-
-  .project-card {
-    padding: 20px 0;
+    font-weight: 400;
+    line-height: 2.3;
   }
 
   .project-card h2 {
     font-size: 1.3rem;
+  }
+
+  .contact {
+    margin-bottom: 500px;
   }
 }
 

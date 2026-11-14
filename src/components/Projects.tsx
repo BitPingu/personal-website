@@ -35,7 +35,7 @@ const projects: Project[] = [
 
 function Projects() {
   return (
-    <section className="projects" id="work" aria-label="Projects">
+    <section className="projects" id="projects" aria-label="Projects">
       <div className="project-list">
         {projects.map((project) => (
           <article className="project-card" key={project.name}>

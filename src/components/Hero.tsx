@@ -42,7 +42,10 @@ function Hero() {
             </a>
           </p>
 
-          <p>To unwind, I enjoy watching anime and listening to music.</p>
+          <p>
+            Outside of making things, I enjoy watching anime <br />
+            and listening to music.
+          </p>
         </div>
 
         {/* Display the user's current or most recently played track. */}
@@ -51,14 +54,14 @@ function Hero() {
             <a href={track.url} target="_blank" rel="noopener noreferrer">
               <Music2 size={14} strokeWidth={1.7} aria-hidden="true" />
               {track.nowPlaying ? 'Listening to' : 'Last listened to'}:{' '}
-              {track.name} — {track.artist}
+              {track.name} by {track.artist}
             </a>
           )}
         </p>
 
-        <div className="hero-links">
-          <a href="#work">
-            See what I'm working on <span className="work-arrow">↓</span>
+        <div className="hero-link">
+          <a href="#projects">
+            See what I'm working on <span className="hero-arrow">↓</span>
           </a>
         </div>
       </div>
