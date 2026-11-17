@@ -29,10 +29,10 @@ function Hero() {
         </div>
 
         <div className="hero-description">
-          <p>I love making games and bringing ideas to life.</p>
+          <p>I like making games and bringing ideas to life.</p>
 
           <p>
-            I'm currently working on my own RPG called mundo.{' '}
+            I'm currently working on my own RPG, <em>mundo</em>.{' '}
             <a
               href="https://github.com/BitPingu/mundo"
               target="_blank"
@@ -42,10 +42,7 @@ function Hero() {
             </a>
           </p>
 
-          <p>
-            Outside of making things, I enjoy watching anime <br />
-            and listening to music.
-          </p>
+          <p>In my free time, I enjoy watching anime and listening to music.</p>
         </div>
 
         {/* Display the user's current or most recently played track. */}

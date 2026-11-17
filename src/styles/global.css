@@ -9,7 +9,7 @@
   --color-accent: #a8795e;
   --color-border: #e5e0d6;
   --color-sand: #e9e3d9;
-  --color-description: #968c81;
+  --color-description: #90867b;
 
   --font-sans: 'DM Sans', sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
@@ -19,12 +19,12 @@
   color-scheme: dark;
 
   --color-background: #252421;
-  --color-text: #eee9df;
-  --color-muted: #aaa092;
+  --color-text: #f2ede4;
+  --color-muted: #b2a798;
   --color-accent: #d19a78;
   --color-border: #45413b;
   --color-sand: #38352f;
-  --color-description: #b5aa9d;
+  --color-description: #a3988c;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -37,7 +37,7 @@
     --color-accent: #d19a78;
     --color-border: #45413b;
     --color-sand: #38352f;
-    --color-description: #b5aa9d;
+    --color-description: #9b9084;
   }
 }
 
@@ -161,7 +161,7 @@ a:focus-visible {
 
 .hero-thanks {
   margin: 10px 0 0;
-  color: var(--color-muted);
+  color: var(--color-description);
   font-size: 0.9rem;
   font-style: italic;
   line-height: 1.6;
@@ -179,7 +179,7 @@ a:focus-visible {
 }
 
 .hero-description p {
-  margin: 0 0 10px;
+  margin: 0 0 16px;
 }
 
 .hero-description p:last-child {
@@ -202,7 +202,7 @@ a:focus-visible {
 
 .hero-listening {
   min-height: 1.2rem;
-  margin: 0 0 76px;
+  margin: 0 0 70px;
   color: var(--color-muted);
   font-size: 0.85rem;
   font-weight: 400;
@@ -277,7 +277,7 @@ a:focus-visible {
   max-width: 480px;
   margin: 8px 0 12px;
   color: var(--color-description);
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   line-height: 1.9;
 }
 
@@ -321,8 +321,8 @@ a:focus-visible {
 }
 
 .contact h2 {
-  margin: 0 0 12px;
-  color: var(--color-muted);
+  margin: 0 0 18px;
+  color: var(--color-description);
   font-size: 0.95rem;
   font-weight: 400;
 }

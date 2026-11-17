@@ -31,6 +31,20 @@ const projects: Project[] = [
     technologies: ['React', 'TypeScript', 'FastAPI', 'PostgreSQL'],
     github: 'https://github.com/BitPingu/pakinggan',
   },
+  {
+    name: 'ikigai',
+    description:
+      'A gamified productivity app that turns habits and personal goals into quests, with daily progress tracking and RPG-inspired progression.',
+    technologies: ['Flutter', 'Dart', 'Riverpod', 'Supabase'],
+    github: 'https://github.com/BitPingu/ikigai',
+  },
+  {
+    name: 'isekai',
+    description:
+      'An experimental top-down 2D game featuring procedurally generated worlds. A sandbox for exploring game mechanics, systems, and ideas for future RPG projects.',
+    technologies: ['Unity', 'C#'],
+    github: 'https://github.com/BitPingu/isekai',
+  },
 ]
 
 function Projects() {
