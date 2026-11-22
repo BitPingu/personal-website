@@ -29,14 +29,6 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      # Verify that files follow the project's formatting rules.
-      - name: Check formatting
-        run: npm run format:check
-
-      # Check for code quality issues.
-      - name: Run ESLint
-        run: npm run lint
-
-      # Type-check and generate the production build.
-      - name: Build project
-        run: npm run build
+      # Run formatting, linting, and production build checks.
+      - name: Run checks
+        run: npm run check

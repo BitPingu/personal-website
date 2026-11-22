@@ -30,6 +30,7 @@ const projects: Project[] = [
       'A music tracking application designed to build a profile of listening preferences and explore music discovery.',
     technologies: ['React', 'TypeScript', 'FastAPI', 'PostgreSQL'],
     github: 'https://github.com/BitPingu/pakinggan',
+    website: 'https://pakinggan.onrender.com',
   },
   {
     name: 'ikigai',
